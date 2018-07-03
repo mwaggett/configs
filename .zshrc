@@ -1,13 +1,32 @@
+export GOPATH=/Users/molly.waggett/go
+export PATH=/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/go/bin:$GOPATH/bin:/Users/molly.waggett/.rbenv/shims:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/munki:/opt/puppetlabs/bin
+export TEAM=release
+export ARTIFACTORY_API_KEY_FILE=/Users/molly.waggett/.artifactory_api_credentials
+
+eval "$(rbenv init -)"
+
+# Borrowed from mckern
+# Keep so, so, so much history
+export HISTFILESIZE=''
+export HISTSIZE=''
+# Don't keep duplicates in history; keep more history!
+export HISTCONTROL="ignoredups:erasedups"
+# Ignore backgrounding, mutt, quitting, and clearing
+export HISTIGNORE="&:mutt:[bf]g:exit:clear"
+# Append every command to history
+PROMPT_COMMAND="history -a; history -c; history -r; ${PROMPT_COMMAND}"
+
+eval $(gpg-agent --daemon)
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/molly/.oh-my-zsh
-
+export ZSH=/Users/molly.waggett/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="mollyrainbow"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -17,7 +36,7 @@ ZSH_THEME="robbyrussell"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -92,3 +111,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias grep='grep -rin --color'
+alias diff='colordiff'
+
