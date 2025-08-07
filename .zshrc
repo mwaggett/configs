@@ -1,7 +1,5 @@
 export GOPATH=/Users/molly.waggett/go
 export PATH=/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/go/bin:$GOPATH/bin:/Users/molly.waggett/.rbenv/shims:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/munki:/opt/puppetlabs/bin
-export TEAM=release
-export ARTIFACTORY_API_KEY_FILE=/Users/molly.waggett/.artifactory_api_credentials
 
 eval "$(rbenv init -)"
 
