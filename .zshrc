@@ -14,10 +14,14 @@ eval $(gpg-agent --daemon)
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export GOPATH=$HOME/go
-export PATH=/usr/local/go/bin:$GOPATH/bin:$HOME/.rbenv/shims:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin
+export PATH=/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin
 
-eval "$(rbenv init -)"
+# If using Go:
+# export PATH=/usr/local/go/bin:$HOME/go/bin:$PATH
+
+# If using rbenv:
+# export PATH=$HOME/.rbenv/shims:$PATH
+# eval "$(rbenv init -)"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
