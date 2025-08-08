@@ -14,13 +14,13 @@ eval $(gpg-agent --daemon)
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export GOPATH=/Users/molly.waggett/go
-export PATH=/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/go/bin:$GOPATH/bin:/Users/molly.waggett/.rbenv/shims:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/munki:/opt/puppetlabs/bin
+export GOPATH=$HOME/go
+export PATH=/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/go/bin:$GOPATH/bin:$HOME/.rbenv/shims:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/munki:/opt/puppetlabs/bin
 
 eval "$(rbenv init -)"
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/molly.waggett/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
