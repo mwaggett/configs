@@ -15,7 +15,7 @@ eval $(gpg-agent --daemon)
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export GOPATH=$HOME/go
-export PATH=/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/go/bin:$GOPATH/bin:$HOME/.rbenv/shims:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/munki
+export PATH=/usr/local/go/bin:$GOPATH/bin:$HOME/.rbenv/shims:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin
 
 eval "$(rbenv init -)"
 
