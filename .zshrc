@@ -9,7 +9,8 @@ export HISTIGNORE="&:mutt:[bf]g:exit:clear"
 # Append every command to history
 PROMPT_COMMAND="history -a; history -c; history -r; ${PROMPT_COMMAND}"
 
-eval $(gpg-agent --daemon)
+# For GPG management:
+# eval $(gpg-agent --daemon)
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
