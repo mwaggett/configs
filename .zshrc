@@ -11,8 +11,6 @@ PROMPT_COMMAND="history -a; history -c; history -r; ${PROMPT_COMMAND}"
 
 eval $(gpg-agent --daemon)
 
-export PATH=/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
