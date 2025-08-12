@@ -15,13 +15,6 @@ PROMPT_COMMAND="history -a; history -c; history -r; ${PROMPT_COMMAND}"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# If using Go:
-# export PATH=/usr/local/go/bin:$HOME/go/bin:$PATH
-
-# If using rbenv:
-# export PATH=$HOME/.rbenv/shims:$PATH
-# eval "$(rbenv init -)"
-
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -127,3 +120,9 @@ source $ZSH/oh-my-zsh.sh
 alias grep='grep -rin --color'
 alias diff='colordiff'
 
+# If using Go:
+# export PATH=/usr/local/go/bin:$HOME/go/bin:$PATH
+
+# If using rbenv:
+# export PATH=$HOME/.rbenv/shims:$PATH
+# eval "$(rbenv init -)"
