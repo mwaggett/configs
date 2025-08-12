@@ -122,7 +122,3 @@ alias diff='colordiff'
 
 # If using Go:
 # export PATH=/usr/local/go/bin:$HOME/go/bin:$PATH
-
-# If using rbenv:
-# export PATH=$HOME/.rbenv/shims:$PATH
-# eval "$(rbenv init -)"
