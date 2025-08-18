@@ -1,3 +1,6 @@
+# This file should live in the ~/.oh-my-zsh/themes directory,
+# alongside the built-in zsh themes
+
 USER_COLOR=046
 HOST_COLOR=035
 DIRECTORY_COLOR=038
