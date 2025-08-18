@@ -1,0 +1,7 @@
+[user]
+	name = Molly Waggett
+	# Update 'email' if you want a different email address associated with
+	# your commits, e.g. a job email address
+	email = mollyrwaggett@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
