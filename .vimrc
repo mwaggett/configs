@@ -1,6 +1,9 @@
 set number
 set ruler
 syntax on
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 " Configure vim-gitgutter (shows git diff changes while editing a file)
 highlight! link SignColumn LineNr
