@@ -119,6 +119,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias grep='grep -rin --color'
 alias diff='colordiff'
+# For use with thefuck: https://github.com/nvbn/thefuck
+eval $(thefuck --alias f) # adds alias 'f'
+eval $(thefuck --alias)   # adds alias 'fuck'
 
 # If using Go:
 # export PATH=/usr/local/go/bin:$HOME/go/bin:$PATH
