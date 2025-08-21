@@ -5,3 +5,5 @@
 	email = mollyrwaggett@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
+[diff]
+	wsErrorHighlight = all
