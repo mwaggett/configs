@@ -118,6 +118,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias grep='grep -rin --color'
+alias ggrep='git grep -i'
 alias diff='colordiff'
 # For use with thefuck: https://github.com/nvbn/thefuck
 eval $(thefuck --alias f) # adds alias 'f'
