@@ -5,9 +5,9 @@ syntax on
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
-" when pressing Tab key, convert to 4 spaces
-set tabstop=4
-set shiftwidth=4
+" when pressing Tab key, convert to 2 spaces
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Configure vim-gitgutter (shows git diff changes while editing a file)
