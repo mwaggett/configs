@@ -124,5 +124,7 @@ alias diff='colordiff'
 eval $(thefuck --alias f) # adds alias 'f'
 eval $(thefuck --alias)   # adds alias 'fuck'
 
+alias python='python3'
+
 # If using Go:
 # export PATH=/usr/local/go/bin:$HOME/go/bin:$PATH
