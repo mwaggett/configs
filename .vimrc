@@ -5,6 +5,10 @@ syntax on
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+" copy indent from current line when starting a new line
+set autoindent
+" indent after lines starting with '{', 'do', 'if', etc.
+set smartindent
 " when pressing Tab key, convert to 2 spaces
 set tabstop=2
 set shiftwidth=2
