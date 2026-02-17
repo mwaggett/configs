@@ -8,7 +8,7 @@ match ExtraWhitespace /\s\+$/
 " copy indent from current line when starting a new line
 set autoindent
 " indent after lines starting with '{', 'do', 'if', etc.
-set smartindent
+set cindent
 " when pressing Tab key, convert to 2 spaces
 set tabstop=2
 set shiftwidth=2
