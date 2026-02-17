@@ -9,6 +9,8 @@ match ExtraWhitespace /\s\+$/
 set autoindent
 " indent after lines starting with '{', 'do', 'if', etc.
 set cindent
+set cinkeys-=0#
+set indentkeys-=0#
 " when pressing Tab key, convert to 2 spaces
 set tabstop=2
 set shiftwidth=2
