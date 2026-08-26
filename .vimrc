@@ -4,6 +4,8 @@ syntax on
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+" trim trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
 
 " copy indent from current line when starting a new line
 set autoindent
