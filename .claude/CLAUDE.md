@@ -39,6 +39,9 @@
 - Max line length: 80 characters. Be greedy - use as much of the line as you can. Wrapping should only occur when the next word would surpass the 80-character limit. This limit applies **only** to commit messages — nowhere else.
 - Wrap context-specific nouns (hostnames, method/variable names, etc.) in backticks, like `this`.
 
+#### PR review
+- When addressing PR comments from Copilot (or another automated tool, rather than a human), iterate and loop a maximum of three times.
+
 ### NEVER access remote servers
 
 - Don't ever ssh into remote servers.
