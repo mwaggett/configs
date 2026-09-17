@@ -13,12 +13,20 @@
 - When writing prose files (e.g. reports, docs, analysis, explanations, chat prose), write them as such - let them flow naturally with no wrapping or line length limits or anything like that, unless otherwise specified.
 - When writing something I've specifically asked you to, don't put that long bar along the left side - I usually intend to copy+paste the content and that bar ruins the formatting.
 
-#### Writing tests that reproduce a specific bug or vulnerability
+#### Writing code
+
+##### Tests
 
 - Derive the test scenario from the exact triggering condition in the source (or CVE/advisory) — quote or reference the actual conditional line — not from a paraphrased description of the bug. If the scenario can't be traced to a specific line, stop and re-check before writing the stub.
 - Assert on the observable mechanism that defines the bug (e.g. a specific network call happening or not happening), not just a downstream side effect (e.g. some exception being raised). A downstream effect can occur for an unrelated reason and still satisfy the assertion, giving a false sense that the bug was reproduced.
 - Before trusting a passing test, deliberately revert the fix and confirm the test fails for the *specific* expected reason — not just that it fails. A red run for the wrong reason means the test isn't testing what you think it is.
 - Avoid stubbing when possible - tests should exercise actual work flows as much as they can.
+
+##### Comments Policy
+- DO NOT add comments when writing or modifying code
+- Code should be self-documenting through descriptive method and variable names
+- Only exception: truly non-obvious business logic that cannot be made clear through naming alone
+- When names don't fully convey intent, prefer better naming over adding comments
 
 ### Git operations
 
