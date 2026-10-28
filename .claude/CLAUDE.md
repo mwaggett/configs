@@ -12,6 +12,7 @@
 - Prefer direct file edits over sed-based approaches.
 - When writing prose files (e.g. reports, docs, analysis, explanations, chat prose), write them as such - let them flow naturally with no wrapping or line length limits or anything like that, unless otherwise specified.
 - When writing something I've specifically asked you to, don't put that long bar along the left side - I usually intend to copy+paste the content and that bar ruins the formatting.
+- Always use Oxford commas where relevant.
 
 #### Writing code
 
